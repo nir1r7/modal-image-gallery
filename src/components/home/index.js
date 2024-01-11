@@ -1,30 +1,18 @@
 import React from "react";
-import Modal from "../modal";
-import useModal from "../modal/usage";
+import ModalImage from "../modal";
+import img1 from "../../assets/img/img1.jpg";
+import img2 from "../../assets/img/img2.jpg";
+import img3 from "../../assets/img/img3.jpg";
 
 function App() {
-  const { isOpen, toggle } = useModal();
 
   return (
     <div className="App">
-      <h1>Modal images in ReactJS</h1>
-      <p>
-        Click on the following images to see the modal:
-      </p>
-      <img src="img1.jpg" alt=""/>
+      <h1>Modal image gallery in React</h1>
 
-      <button  onClick={toggle}>Click me!</button>
-
-      <img src="./img1.jpg" onClick={toggle} alt=""/>
-      <Modal isOpen={isOpen} toggle={toggle}>
-          <div>
-            <img className="modal-image" src="./img1.jpg" alt=""/>
-          </div>
-      </Modal>
-          
-      {
-        console.log(isOpen)
-      }
+      <ModalImage src={img1}/>
+      <ModalImage src={img2}/>
+      <ModalImage src={img3}/>
 
     </div>
   );

@@ -3,6 +3,15 @@
   margin: 2%;
 }
 
+.modal-display-image{
+  height: 100px;
+  padding: 5px;
+}
+
+.modal-display-image:hover{
+  opacity: 0.8;
+}
+
 .modal-overlay {
   z-index: 9999;
   width: 100%;
